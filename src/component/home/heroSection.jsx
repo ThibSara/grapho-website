@@ -4,7 +4,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <div className=" max-w-xl mx-auto  place-self-center space-y-4 text-center justify-self-start">
-      <div className="text-primary text-4xl sm:text-7xl font-bold">
+      <div className="text-primary text-4xl sm:text-7xl font-semibold">
         Graphotérapie
       </div>
       <div className="text-black text-base  sm:text-lg lg:text-xl font-semibold">
