@@ -7,16 +7,20 @@ import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
-    title: "About",
-    path: "#about",
+    title: "La Graphothérapie",
+    path: "/",
   },
   {
-    title: "Projects",
-    path: "#projects",
+    title: "Tout savoir sur les séances",
+    path: "/seances",
   },
   {
-    title: "Contact",
-    path: "#contact",
+    title: "Un peu plus sur moi",
+    path: "/aPropos",
+  },
+  {
+    title: "Prendre RDV",
+    path: "/prendreRDV",
   },
 ];
 
