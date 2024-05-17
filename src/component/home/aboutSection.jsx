@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <div className=" font-urbanist  mx-auto  place-self-center space-y-4 text-center justify-self-start">
+    <div className=" container mx-auto px-8 place-self-center space-y-4 text-center justify-self-start">
       <Image
         src="/images/stickers/board.png"
         alt="hero image"
@@ -35,7 +35,9 @@ const AboutSection = () => {
       <div className="text-4xl md:text-4xl text-secondary font-semibold">
         En savoir plus
       </div>
-      <div className="text-black text-base font-medium lg:text-lg space-y-4">
+      <div className="text-black text-base  font-medium lg:text-lg space-y-4">
+      <div className=" max-w-xl mx-auto  place-self-center space-y-4 text-center justify-self-start">
+
         <p>
           Un enfant qui écrit mal, trop lentement ou avec difficulté peut
           rencontrer des obstacles dans son parcours scolaire. Par exemple, s'il
@@ -63,6 +65,8 @@ const AboutSection = () => {
       <button className="text-white font-semibold py-4 px-4 bg-primary rounded ">
         Est ce que mon enfant en à besoin ?
       </button>
+
+   </div>
     </div>
   );
 };

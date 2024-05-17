@@ -3,8 +3,10 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className=" max-w-xl mx-auto  place-self-center space-y-4 text-center justify-self-start">
-      <div className="text-primary text-4xl sm:text-7xl font-semibold">
+    <main className="bg-background font-urbanist flex-col flex items-center justify-center min-h-screen">
+      <div className ="container mx-auto px-12 py-4" >
+      <div className=" max-w-xl mx-auto  place-self-center space-y-4 text-center justify-self-start">
+      <div className="text-primary text-4xl sm:text-7xl font-bold">
         Graphotérapie
       </div>
       <div className="text-black text-base  sm:text-lg lg:text-xl font-semibold">
@@ -36,6 +38,8 @@ const HeroSection = () => {
         négligée.
       </div>
     </div>
+      </div>
+ </main>
   );
 };
 
