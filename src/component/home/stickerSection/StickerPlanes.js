@@ -52,82 +52,24 @@ export default function StickerPlanes({ MouseMovement }) {
   };
 
   return (
-    <div className="absolute top-0 w-full h-screen pointer-events-none -z-2">
+    <div className="absolute w-full bg-primary h-screen pointer-events-none -z-2">
       <div
         ref={plane1}
         id="StickerOneLayer"
-        className="absolute top-0 w-full h-screen pointer-events-none "
-      >
+        >
         <ImageWrapper
-          className={"right-[20%] bottom-[20%] w-[8vh] lg:w-[12vh]"}
+          className={"w-[8vh] lg:w-[12vh]"}
           custom={4.4}
         >
           <Image
-            className="inline-block align-middle"
+            className="inline-block  align-middle"
             src={"/StickersWithColor/Apron Sticker.png"}
-            height={300}
-            width={300}
+            height={150}
+            width={150}
             alt="apron-sticker"
           />
         </ImageWrapper>
-        <ImageWrapper
-          className={"left-[0%] bottom-[20%] w-[10vh] lg:w-[15vh]"}
-          custom={3.5}
-        >
-          <Image
-            className="inline-block align-middle"
-            src={"/StickersWithColor/Fried egg Sticker.png"}
-            height={300}
-            width={300}
-            alt="fried-egg-sticker"
-          />
-        </ImageWrapper>
+        </div>
       </div>
-      <div
-        ref={plane2}
-        id="StickerTwoLayer"
-        className="absolute top-0 w-full h-screen pointer-events-none"
-      >
-
-        <ImageWrapper
-          className={"bottom-[10%] left-[22%]  w-[8vh] lg:w-[12vh]"}
-          custom={4}
-        >
-          <Image
-            className="inline-block align-middle"
-            src={"/StickersWithColor/Donut Sticker.png"}
-            height={300}
-            width={300}
-            alt="Donut-sticker"
-          />
-        </ImageWrapper>
-
-        <ImageWrapper
-          className={"bottom-[20%] right-[0%] w-[9vh] lg:w-[14vh]"}
-          custom={1}
-        >
-          <Image
-            className="inline-block align-middle"
-            src={"/StickersWithColor/Chef's hat Sticker.png"}
-            height={300}
-            width={300}
-            alt="Chef's-Hat-sticker"
-          />
-        </ImageWrapper>
-
-        <ImageWrapper
-          className={"top-[10%] right-[22%] w-[8vh] lg:w-[12vh]"}
-          custom={3}
-        >
-          <Image
-            className="inline-block align-middle"
-            src={"/StickersWithColor/Cup of tea Sticker.png"}
-            height={300}
-            width={300}
-            alt="Cup-of-tea-sticker"
-          />
-        </ImageWrapper>
-      </div>
-    </div>
   );
 }

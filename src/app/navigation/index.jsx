@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { act, useState } from "react";
+import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
-    title: "La Graphothérapie",
+    title: "La graphothérapie",
     path: "/",
   },
   {
@@ -30,11 +30,11 @@ const Navbar = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="fixed mx-auto bg-white border-b  text-black top-0 left-0 right-0 z-10 ">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+    <nav className="fixed mx-auto bg-white text-black top-0 left-0 right-0 z-10">
+      <div className="container flex items-center justify-between px-4 py-2 lg:py-4">
         <Link
-          href={"/"}
-          className="text-4xl  md:text-4xl text-secondary font-semibold"
+          href="/"
+          className="text-4xl md:text-4xl text-secondary font-semibold"
         >
           Grapho 78
         </Link>
@@ -56,22 +56,22 @@ const Navbar = () => {
               </button>
             )}
           </div>
-          <div className="menu hidden md:block md:w-auto" id="navbar">
-            <ul className="flex md:p-0 md:flex-row md:space-x-8 mt-0 ">
+          <div className="hidden md:flex md:space-x-8">
+            <ul className="flex space-x-8">
               {navLinks.map((link, index) => (
                 <li key={index}>
                   <NavLink
                     href={link.path}
                     title={link.title}
                     active={pathName === link.path}
-                  ></NavLink>
+                  />
                 </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen && <MenuOverlay links={navLinks} />}
     </nav>
   );
 };
