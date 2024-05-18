@@ -11,7 +11,7 @@ const NavLink = ({ href, title, active }) => {
   return (
     <Link
       href={href}
-      className={`relative block  sm:text-xl  py-2 rounded text-black hover:text-primary ${rdvButton}`}
+      className={`relative block  sm:text-base  py-2 rounded text-black hover:text-primary ${rdvButton}`}
     >
       <span className="relative z-10">{title}</span>
       {!isRDV && active && (

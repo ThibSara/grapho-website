@@ -34,7 +34,7 @@ const AboutSection = () => {
             activités scolaires et quotidiennes.
           </p>
         </div>
-        <button className="text-white font-semibold py-4 px-4 bg-primary rounded ">
+        <button className="text-white font-semibold py-4 px-4 bg-primary rounded-xl ">
           Est ce que mon enfant en à besoin ?
         </button>
       </div>

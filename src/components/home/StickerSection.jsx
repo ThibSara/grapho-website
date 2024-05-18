@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import HeroCopy from "./stickerSection/HeroCopy";
 import StickerPlanes from "./stickerSection/StickerPlanes";
-import AboutSection from "./aboutSection";
+import AboutSection from "./AboutSection";
 
 export default function StickerSection() {
   const [MouseMovement, setMouseMovement] = useState(0);
@@ -30,6 +30,7 @@ export default function StickerSection() {
         ref={HeroRef}
         className="relative flex flex-col items-center justify-center w-full h-screen"
       >
+        <AboutSection />
         <StickerPlanes MouseMovement={MouseMovement} />
       </section>
       <section className="relative flex flex-col justify-between w-full h-screen"></section>

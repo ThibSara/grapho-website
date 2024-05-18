@@ -1,7 +1,7 @@
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navigation from "./navigation";
-import Cursor from '../component/cursor'
+import Cursor from '../components/cursor'
 
 
 const urbanist = Urbanist({ subsets: ["latin"] });
