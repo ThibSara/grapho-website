@@ -52,7 +52,7 @@ export default function StickerPlanes({ MouseMovement }) {
   };
 
   return (
-    <div className="absolute top-0 w-full h-screen pointer-events-none -z-2">
+    <div className="absolute top-0 mx-auto w-full h-screen pointer-events-none -z-2">
       <div
         ref={plane1}
         id="StickerOneLayer"
@@ -65,8 +65,8 @@ export default function StickerPlanes({ MouseMovement }) {
           <Image
             className="inline-block w-full h-full"
             src={"/images/Stickers/board.png"}
-            height={300}
-            width={300}
+            height={60}
+            width={60}
             alt="board-sticker"
           />
         </ImageWrapper>
@@ -77,8 +77,8 @@ export default function StickerPlanes({ MouseMovement }) {
           <Image
             className="inline-block align-middle"
             src={"/images/Stickers/calculator.png"}
-            height={300}
-            width={300}
+            height={100}
+            width={100}
             alt="calculator-sticker"
           />
         </ImageWrapper>
@@ -89,8 +89,8 @@ export default function StickerPlanes({ MouseMovement }) {
           <Image
             className="inline-block align-middle"
             src={"/images/Stickers/highlighter.png"}
-            height={300}
-            width={300}
+            height={80}
+            width={80}
             alt="highlighter-sticker"
           />
         </ImageWrapper>
@@ -101,8 +101,8 @@ export default function StickerPlanes({ MouseMovement }) {
           <Image
             className="inline-block align-middle"
             src={"/images/Stickers/pot-pencil.png"}
-            height={300}
-            width={300}
+            height={100}
+            width={100}
             alt="pot-pencil-sticker"
           />
         </ImageWrapper>
@@ -113,14 +113,14 @@ export default function StickerPlanes({ MouseMovement }) {
         className="absolute top-0 w-full h-screen pointer-events-none"
       >
         <ImageWrapper
-          className={"-left-[4%] top-[22%] w-[9vh] lg:w-[14vh]"}
+          className={"left-[5%] top-[22%] w-[9vh] lg:w-[14vh]"}
           custom={2}
         >
           <Image
             className="w-full h-full "
             src={"/images/Stickers/pencil.png"}
-            height={300}
-            width={300}
+            height={50}
+            width={50}
             alt="pencil-sticker"
           />
         </ImageWrapper>
@@ -131,8 +131,8 @@ export default function StickerPlanes({ MouseMovement }) {
           <Image
             className="inline-block align-middle"
             src={"/images/Stickers/rule.png"}
-            height={300}
-            width={300}
+            height={80}
+            width={80}
             alt="rule-sticker"
           />
         </ImageWrapper>
@@ -144,8 +144,8 @@ export default function StickerPlanes({ MouseMovement }) {
           <Image
             className="inline-block align-middle"
             src={"/images/Stickers/rubber.png"}
-            height={300}
-            width={300}
+            height={80}
+            width={80}
             alt="rubber-sticker"
           />
         </ImageWrapper>
@@ -157,8 +157,8 @@ export default function StickerPlanes({ MouseMovement }) {
           <Image
             className="inline-block align-middle"
             src={"/images/Stickers/notebook.png"}
-            height={300}
-            width={300}
+            height={80}
+            width={80}
             alt="notebook-sticker"
           />
         </ImageWrapper>

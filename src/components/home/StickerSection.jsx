@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
-import HeroCopy from "./stickerSection/HeroCopy";
 import StickerPlanes from "./stickerSection/StickerPlanes";
 import AboutSection from "./AboutSection";
 
@@ -24,16 +23,15 @@ export default function StickerSection() {
       onMouseMove={(e) => {
         setMouseMovement(e);
       }}
-      className="w-full flex flex-col px-[5.5rem] h-[350vh]"
+      className="flex flex-col"
     >
       <section
         ref={HeroRef}
-        className="relative flex flex-col items-center justify-center w-full h-screen"
+        className="relative flex flex-col items-center justify-center w-full h-screen "
       >
         <AboutSection />
         <StickerPlanes MouseMovement={MouseMovement} />
       </section>
-      <section className="relative flex flex-col justify-between w-full h-screen"></section>
     </main>
   );
 }
