@@ -1,16 +1,13 @@
-import HeroSection from "../component/heroSection";
-import Cursor from '../component/cursor'
-import Navbar from "../component/Navbar";
+import HeroSection from '../components/home/HeroSection';
+import StickerSection from '../components/home/StickerSection';
+import AboutSection from '@/components/home/AboutSection';
 
 export default function Home() {
+  
   return (
-    <main className="bg-background font-urbanist flex-col flex min-h-screen">
-      <Navbar />
-      <Cursor />
-      <div className ="container mx-auto mt-24 px-12 py-4" >
-      <HeroSection />
-      
-      </div>
- </main>
+    <div className='bg-white text-black'>
+    <HeroSection/>
+  <AboutSection/>
+    </div>
   );
 }

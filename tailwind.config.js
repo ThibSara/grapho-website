@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'urbanist': ['Urbanist', 'sans-serif'], 
+      'urbanist': [Urbanist, 'sans-serif'], 
     },
     
     colors:{
