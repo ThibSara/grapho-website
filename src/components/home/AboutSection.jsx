@@ -44,8 +44,8 @@ const AboutSection = () => {
 
   return (
     <div className="container max-w-5xl mx-auto px-8 flex justify-center">
-      <div className="text-black text-base font-medium lg:text-lg space-y-16 text-center">
-        <div className="flex flex-row items-center ">
+      <div className="text-black text-base font-medium lg:text-lg space-y-16">
+        <div className="flex flex-row  ">
         <motion.div
           className="flex items-center space-x-6"
           ref={ref1}
@@ -54,8 +54,8 @@ const AboutSection = () => {
           variants={paragraphVariants}
           custom={0.2}
         >
-          <div className="text-left max-w-2xl mx-auto">
-            <div className="text-4xl md:text-4xl text-center text-secondary font-semibold py-3">
+          <div className="text-left max-w-2xl">
+            <div className="text-4xl md:text-4xl  text-center text-secondary font-semibold py-3">
               Des difficultés
             </div>
             <p className="text-center"> 
@@ -67,18 +67,10 @@ const AboutSection = () => {
               ses camarades. Ces défis peuvent également affecter sa confiance
               en lui, rendant l'apprentissage encore plus ardu.
             </p>
+            
           </div>
-          
         </motion.div>
-        <motion.div whileHover="move" variants={imageVariants}>
-          <Image
-            src="/images/stickers/pencil.png"
-            height={80}
-            width={80}
-            alt="highlighter-sticker"
-            className="ml-auto"
-          />
-          </motion.div>
+        
         </div>
 
         <motion.div
@@ -104,15 +96,8 @@ const AboutSection = () => {
               lui et sa performance scolaire.
             </p>
           </div>
-        </motion.div>
-        <motion.div whileHover="bounce" variants={imageVariants}>
-          <Image
-            src="/images/stickers/rubber.png"
-            height={80}
-            width={80}
-            alt="highlighter-sticker"
-            className="ml-auto"
-          />
+          
+        
           </motion.div>
 
         <motion.div
@@ -134,19 +119,12 @@ const AboutSection = () => {
               ses activités scolaires et quotidiennes.
             </p>
           </div>
-        </motion.div>
-        <motion.div whileHover="move" variants={imageVariants}>
-          <Image
-            src="/images/stickers/pot-pencil.png"
-            height={80}
-            width={80}
-            alt="highlighter-sticker"
-            className="ml-auto"
-          />
-          </motion.div>
+          
 
+        </motion.div>
+        
         <div className="flex justify-center">
-          <button className="text-white font-semibold py-4 px-8 bg-primary rounded-xl">
+          <button className="text-white font-semibold py-4 px-4 bg-primary rounded-xl">
             Est-ce que mon enfant en a besoin ?
           </button>
         </div>
