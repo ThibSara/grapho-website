@@ -5,7 +5,7 @@ const NavLink = ({ href, title, active }) => {
   const isRDV = title === "Prendre RDV";
 
   const rdvButton = isRDV
-    ? "bg-primary text-white px-3 rounded-3xl hover:text-white hover:bg-secondary"
+    ? "bg-primary text-white font-semibold px-3 rounded-3xl hover:text-white hover:bg-secondary"
     : "";
 
   return (

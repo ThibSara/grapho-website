@@ -64,7 +64,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="inline-block w-full h-full"
-            src={"/images/Stickers/board.png"}
+            src={"/images/stickers/board.png"}
             height={60}
             width={60}
             alt="board-sticker"
@@ -76,7 +76,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="inline-block align-middle"
-            src={"/images/Stickers/calculator.png"}
+            src={"/images/stickers/calculator.png"}
             height={100}
             width={100}
             alt="calculator-sticker"
@@ -88,7 +88,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="inline-block align-middle"
-            src={"/images/Stickers/highlighter.png"}
+            src={"/images/stickers/highlighter.png"}
             height={80}
             width={80}
             alt="highlighter-sticker"
@@ -100,7 +100,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="inline-block align-middle"
-            src={"/images/Stickers/pot-pencil.png"}
+            src={"/images/stickers/pot-pencil.png"}
             height={100}
             width={100}
             alt="pot-pencil-sticker"
@@ -118,7 +118,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="w-full h-full "
-            src={"/images/Stickers/pencil.png"}
+            src={"/images/stickers/pencil.png"}
             height={50}
             width={50}
             alt="pencil-sticker"
@@ -130,7 +130,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="inline-block align-middle"
-            src={"/images/Stickers/rule.png"}
+            src={"/images/stickers/rule.png"}
             height={80}
             width={80}
             alt="rule-sticker"
@@ -143,7 +143,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="inline-block align-middle"
-            src={"/images/Stickers/rubber.png"}
+            src={"/images/stickers/rubber.png"}
             height={80}
             width={80}
             alt="rubber-sticker"
@@ -156,7 +156,7 @@ export default function StickerPlanes({ MouseMovement }) {
         >
           <Image
             className="inline-block align-middle"
-            src={"/images/Stickers/notebook.png"}
+            src={"/images/stickers/notebook.png"}
             height={80}
             width={80}
             alt="notebook-sticker"
