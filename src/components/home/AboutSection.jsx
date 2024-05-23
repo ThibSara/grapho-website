@@ -124,7 +124,7 @@ const AboutSection = () => {
         </motion.div>
         
         <div className="flex justify-center">
-          <button className="text-white font-semibold py-4 px-4 bg-primary rounded-xl">
+          <button className="text-white font-semibold py-4 px-2 bg-primary rounded-xl hover:bg-secondary">
             Est-ce que mon enfant en a besoin ?
           </button>
         </div>

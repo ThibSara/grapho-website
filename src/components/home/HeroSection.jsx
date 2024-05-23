@@ -2,8 +2,16 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { IoArrowDownCircle } from "react-icons/io5";
 
 const HeroSection = () => {
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight -80, 
+      behavior: 'smooth' 
+    });
+  };
+
   return (
     <main className="bg-background flex-col flex items-center min-h-screen justify-center px-4 md:px-8">
       <motion.div
@@ -32,6 +40,7 @@ const HeroSection = () => {
               width={800}
               height={800}
             />
+            
           </div>
           <div className="  text-black text-base sm:text-lg lg:text-xl sm:px-8 lg:px-12">
             {" "}
@@ -41,9 +50,35 @@ const HeroSection = () => {
             adolescents dont l'écriture présente des difficultés, qu'elle soit
             peu lisible ou négligée.
           </div>
+          
         </div>
+        <motion.div
+      className="flex flex-col items-center justify-center pt-20"
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1, y: [0, 10, 0] }}
+      transition={{
+        delay:2,
+        duration: 0.5,
+        ease: "easeOut",
+        y: {
+          duration: 1.5,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop"
+        }
+      }}
+    >
+      <div className="text-sm text-secondary">En savoir plus</div>
+
+      <IoArrowDownCircle
+       size={40}
+        color={"#F89BC0"}
+        onClick={handleScroll} 
+        style={{ cursor: "pointer" }}
+        />
       </motion.div>
-      
+      </motion.div>
+
     </main>
   );
 };
