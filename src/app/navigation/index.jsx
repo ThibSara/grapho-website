@@ -31,17 +31,13 @@ const Navbar = () => {
 
   return (
     <nav className="fixed mx-auto bg-white text-black top-0 left-0 right-0 z-10">
-      
-      <div className="container flex items-center justify-between px-4 py-2 lg:py-4">
-      <Link
-          href="/"
-          className="text-4xl md:text-4xl text-secondary font-semibold"
-        >
-          Grapho 78
-        </Link>
-        
-        <div className="flex-grow flex justify-center">
-          <div className="mobile-menu block md:hidden">
+      <div className="flex items-center justify-between px-4 py-2 lg:py-4">
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <Link href="/" className="text-4xl md:text-4xl text-secondary font-semibold">
+            Grapho 78
+          </Link>
+          <div className="mobile-menu block md:hidden ml-4">
             {!navbarOpen ? (
               <button
                 onClick={() => setNavbarOpen(true)}
@@ -58,24 +54,26 @@ const Navbar = () => {
               </button>
             )}
           </div>
-          <div className="justify-center hidden md:flex md:space-x-8">
-            <ul className="flex space-x-8">
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <NavLink
-                    href={link.path}
-                    title={link.title}
-                    active={pathName === link.path}
-                  />
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
+        {/* Spacer for centering links */}
+        <div className="flex-grow hidden md:flex md:justify-center">
+          <ul className="flex space-x-8">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <NavLink
+                  href={link.path}
+                  title={link.title}
+                  active={pathName === link.path}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* Right-side Spacer */}
+        <div className="hidden md:block w-16"></div>
       </div>
       {navbarOpen && <MenuOverlay links={navLinks} />}
     </nav>
-    
   );
 };
 
