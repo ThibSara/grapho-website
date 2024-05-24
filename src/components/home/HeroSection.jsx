@@ -15,7 +15,7 @@ const HeroSection = () => {
   return (
     <main className="bg-background flex-col flex items-center min-h-screen justify-center px-4 md:px-8">
       <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
+        initial={{ opacity: 0, scale: 0.5 }}justify-center 
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
