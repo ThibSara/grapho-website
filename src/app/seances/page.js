@@ -4,8 +4,7 @@ import Test from "@/components/seances/Test";
 export default function Seances() {
   return (
 <main className="bg-background font-urbanist">
-  <HeroSection/>
-  <Test/> 
+    <Test/> 
 </main>
   );
 }
