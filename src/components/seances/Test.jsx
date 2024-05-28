@@ -24,7 +24,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     clamp: false,
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-20, -80, v)}%`);
 
   const directionFactor = useRef(1);
   useAnimationFrame((t, delta) => {
@@ -42,16 +42,16 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   });
 
   return (
-    <div className=" mx-auto max-w-6xl  container overflow-hidden items-center">
+    <div className="mx-auto max-w-6xl container overflow-hidden items-center py-2">
       <motion.div
-        className="text-4xl md:text-4xl text-secondary font-semibold whitespace-nowrap flex justify-center"
+        className="text-4xl md:text-4xl text-secondary font-semibold whitespace-nowrap flex"
         style={{ x }}
       >
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        
+        {[...Array(4)].map((_, index) => (
+          <span key={index} className="mr-4">
+            {children}
+          </span>
+        ))}
       </motion.div>
     </div>
   );
@@ -59,21 +59,30 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function Test() {
   return (
-    <main className="justify-center">
+    <main className="justify-center mt-20">
       <section className="w-full">
-      <ParallaxText baseVelocity={-2}>
-      <span className="text-primary">
-      <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" /> {" "}
-            {" "}Une écriture {" "}
-            </span>
-            <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" /> {" "}
-            {" "}lente{" "}
-            <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" /> {" "}
-            {" "}peu lisible{" "}
-            <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" /> {" "}
-            {" "}irrégulière{" "}
-      </ParallaxText>
-      <ParallaxText baseVelocity={2}>Scroll velocity</ParallaxText>
+        <ParallaxText baseVelocity={-2}>
+          <span className="text-primary">
+            <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+            Une écriture{" "}
+          </span>
+          <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+          lente{" "}
+          <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+          peu lisible{" "}
+          <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+          irrégulière{" "}
+        </ParallaxText>
+        <ParallaxText baseVelocity={2}>
+          <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+          Une écriture{" "}
+          <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+          lente{" "}
+          <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+          peu lisible{" "}
+          <span className="dot mx-1 inline-block h-2 w-2 rounded-full bg-secondary" />{" "}
+          irrégulière{" "}
+        </ParallaxText>
       </section>
     </main>
   );
