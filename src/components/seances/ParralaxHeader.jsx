@@ -57,7 +57,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   );
 }
 
-export default function Test() {
+export default function ParralaxHeader() {
   return (
     <main className="justify-center mt-20">
       <section className="w-full">
@@ -84,6 +84,10 @@ export default function Test() {
           irrégulière{" "}
         </ParallaxText>
       </section>
+      <div className="text-black max-w-4xl mx-auto text-base sm:text-lg py-5 lg:text-xl flex justify-center text-center">
+        Les situations dans lesquelles la graphothérapie est recommandée sont
+        celles où l’écriture présente une ou plusieurs de ces caractéristiques.
+      </div>
     </main>
   );
 }

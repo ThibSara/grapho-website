@@ -34,7 +34,10 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-4 py-2 lg:py-4">
         {/* Logo Section */}
         <div className="flex items-center">
-          <Link href="/" className="text-4xl md:text-4xl text-secondary font-semibold">
+          <Link
+            href="/"
+            className="text-4xl md:text-4xl text-secondary font-semibold"
+          >
             Grapho 78
           </Link>
           <div className="mobile-menu block md:hidden ml-4">

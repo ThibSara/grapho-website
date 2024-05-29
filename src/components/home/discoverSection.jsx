@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 const DiscoverSection = () => {
   const items = [
@@ -14,19 +15,19 @@ const DiscoverSection = () => {
       id: 1,
       image: "/images/carousel/stylos.jpg",
       title: "Les meilleurs stylos",
-      description: "Les meilleurs stylos",
+      description: "Ma selection des meilleurs stylos pour petits et grands.",
     },
     {
       id: 2,
       image: "/images/carousel/writing-child.jpg",
       title: "La motricité fine",
-      description: "This is the second item in the carousel.",
+      description: "Ma selection des meilleurs stylos pour petits et grands.",
     },
     {
       id: 3,
       image: "/images/carousel/writing-child-2.jpg",
       title: "Avant/Après",
-      description: "This is the third item in the carousel.",
+      description: "Ma selection des meilleurs stylos pour petits et grands.",
     },
     {
       id: 4,
@@ -54,14 +55,16 @@ const DiscoverSection = () => {
               <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-4 md:p-6">
                   <Card>
-                    <CardContent className="flex flex-col items-center p-6">
+                    <CardContent className="flex flex-col  p-6">
                       <img
                         src={item.image}
                         alt={item.title}
                         className="mb-4 w-full h-64 object-cover rounded"
                       />
-                      <h2 className="text-3xl font-semibold text-center">{item.title}</h2>
-                      <p className="text-center">{item.description}</p>
+                      <h2 className="text-lg text-primary font-semibold  ">
+                        {item.title}
+                      </h2>
+                      <p className="">{item.description}</p>
                     </CardContent>
                   </Card>
                 </div>
