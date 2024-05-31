@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="footer font-urbanist border mx-auto border-secondary z-10 border-l-transparent border-r-transparent text-black bg-background">
+    <footer className="footer font-urbanist border-t mx-auto border-secondary z-10 border-l-transparent border-r-transparent text-black bg-background">
       <div className="p-8 flex justify-between ">
         <div>
           <span className="font-semibold text-primary text-xl md:text-3xl">

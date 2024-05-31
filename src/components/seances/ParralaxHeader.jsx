@@ -84,10 +84,6 @@ export default function ParralaxHeader() {
           irrégulière{" "}
         </ParallaxText>
       </section>
-      <div className="text-black max-w-4xl mx-auto text-base sm:text-lg py-5 lg:text-xl flex justify-center text-center">
-        Les situations dans lesquelles la graphothérapie est recommandée sont
-        celles où l’écriture présente une ou plusieurs de ces caractéristiques.
-      </div>
     </main>
   );
 }
