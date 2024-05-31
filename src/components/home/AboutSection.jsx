@@ -60,7 +60,7 @@ const AboutSection = () => {
       Des difficultés
     </div>
     
-    <p className=""> 
+    <p className="text-regular"> 
       Un enfant qui écrit mal, trop lentement ou avec difficulté peut
       rencontrer des obstacles dans son parcours scolaire. Par exemple,
       s'il n'arrive pas à copier assez rapidement ses leçons ou s'il se
@@ -99,7 +99,7 @@ const AboutSection = () => {
     La graphothérapie comme solution
     </div>
     
-    <p className="text-right"> 
+    <p className="text-right text-regular"> 
     C'est là qu'intervient la graphothérapeute. Spécialiste de
         l'écriture, elle évalue les besoins spécifiques de chaque enfant
         et met en place des exercices personnalisés pour améliorer la
@@ -121,11 +121,11 @@ const AboutSection = () => {
   custom={1.5}
 >
   <div className="text-left max-w-2xl">
-    <div className="text-3xl md:text-3xl text-primary font-semibold py-3">
+    <div className="text-3xl md:text-3xl text-secondary font-semibold py-3">
       Un petit plus
     </div>
     
-    <p className="pb-3">
+    <p className="pb-3 text-regular">
       La graphothérapie ne se limite pas à corriger l’écriture,
       elle vise aussi à renforcer la motricité fine, la concentration et la
       posture de l’enfant, contribuant ainsi à un bien-être global dans
